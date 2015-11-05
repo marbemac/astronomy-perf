@@ -1,0 +1,26 @@
+<head>
+  <title>astronomy-perf</title>
+</head>
+
+<body>
+  <h1>Welcome to Meteor!</h1>
+
+  <button class='astronomy'>Load w Astronomy</button>
+  <button class='plain'>Load w Plain Meteor</button>
+
+  <br />
+  <br />
+  <div>Load Time: {{loadTime}}ms</div>
+  <br />
+  <br />
+
+  <ul>
+    {{#each entries}}
+      {{> entry}}
+    {{/each}}
+  </ul>
+</body>
+
+<template name="entry">
+  <p>{{_id}}</p>
+</template>
