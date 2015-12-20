@@ -5,6 +5,16 @@
 <body>
   <h1>Welcome to Meteor!</h1>
 
+  <h3>Test Dirty Tracking</h3>
+  <input class="url" value="{{testEntry.request.url}}" placeholder='URL ie http://localhost:3000' />
+  <br /><br />
+  <div>{{testEntryIsModified}}, results of entryTest.getModified():</div>
+  <pre>
+    <code>{{{testEntryModified}}}</code>
+  </pre>
+
+  <h3>Test Performance</h3>
+
   <button class='astronomy'>Load w Astronomy</button>
   <button class='plain'>Load w Plain Meteor</button>
 
